@@ -1,7 +1,3 @@
-EXERCICE 1 (4 points) 
-
- 
-Écrire une fonction  qui prend en paramètre un tableau de nombres 
 # Sujet 15
 
 Ce sujet comporte deux exercices : voir le PDF ci-joint avec les rectifications (cliquer sur le texte en jaune).  
