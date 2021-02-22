@@ -1,6 +1,6 @@
 # Sujet 15
 
-Ce sujet comporte deux exercices : voir le PDF ci-joint avec les rectifications (cliquer sur le texte en jaune).  
+Ce sujet comporte deux exercices : voir le PDF ci-joint. qui contient quelques erreurs.
 Les rectifications ont été effectuées dans les fichiers exercices.
 
 Pour le premier exercice, vous devez écrire une fonction `rechercheMinMax` 
