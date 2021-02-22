@@ -1,81 +1,30 @@
 EXERCICE 1 (4 points) 
 
  
-Écrire une fonction RechercheMinMax qui prend en paramètre un tableau de nombres 
-non triés  tab, et qui renvoie la plus petite et la plus grande valeur du tableau sous la 
-forme d’un dictionnaire à deux clés ‘min’ et ‘max’. Les tableaux seront représentés sous 
-forme de liste Python. 
+Écrire une fonction  qui prend en paramètre un tableau de nombres 
+# Sujet 15
 
-Exemples : 
+Ce sujet comporte deux exercices : voir le PDF ci-joint avec les rectifications (cliquer sur le texte en jaune).  
+Les rectifications ont été effectuées dans les fichiers exercices.
 
->>> tableau = [0, 1, 4, 2, -2, 9, 3, 1, 7, 1] 
->>> resultat = rechercheMinMax(tableau) 
->>> resultat 
-{'min': -2, 'max': 9} 
+Pour le premier exercice, vous devez écrire une fonction `rechercheMinMax` 
 
- 
->>> tableau = [] 
->>> resultat = rechercheMinMax(tableau) 
->>> resultat 
-{'min': None, 'max': None} 
 
-EXERCICE 2 (4 points) 
+Pour le deuxième, il s'agit de compléter le code fourni.
 
-On dispose d’un programme permettant de créer un objet de type PaquetDeCarte, 
-selon les éléments indiqués dans le code ci-dessous. 
+- Les fichiers à compléter sont dans le dossier `exercices`.
 
-Compléter ce code aux endroits indiqués par #A compléter, puis ajouter des 
-assertions dans l’initialiseur de Carte, ainsi que dans la méthode getCarteAt(). 
+- Le dossier `tests` correspond aux tests fournis par l'énoncé.
+Il ne faut surtout pas modifier ces fichiers sous peine d'annulation de l'épreuve.
 
- 
-class Carte: 
-    """Initialise Couleur (entre 1 à 4), et Valeur (entre 1 à 
-13)""" 
-    def __init__(self, c, v): 
-        self.Couleur = c 
-        self.Valeur = v 
- 
-    """Renvoie le nom de la Carte As, 2, ... 10,  
-       Valet, Dame, Roi""" 
-    def getNom(self): 
-        if ( self.Valeur > 1 and self.Valeur < 11): 
-            return str( self.Valeur) 
-        elif self.Valeur == 11: 
-            return "Valet" 
-        elif self.Valeur == 12: 
-            return "Dame" 
-        elif self.Valeur == 13: 
-            return "Roi" 
-        else: 
-            return "As" 
- 
-    """Renvoie la couleur de la Carte (parmi pique, coeur, 
-carreau, trefle""" 
-    def getCouleur(self): 
-        return ['pique', 'coeur', 'carreau', 'trefle' 
-][self.Couleur] 
- 
-class PaquetDeCarte: 
-    def __init__(self): 
-        self.contenu = [] 
- 
-    """Remplit le paquet de cartes""" 
-    def remplir(self): 
-#A compléter 
- 
+- Si vous travaillez avec repl.it, modifier le fichier .replit :  
+<pre><code style="background-color:black;color:white;width:100%;font-size: large;">
+# Si vous voulez exécuter l'exercice 1 : Enlever le # de la ligne ci-dessous
+# run = "python3 exercices/exercice1.py"
 
- 
-    """Renvoie la Carte qui se trouve à la position donnée""" 
-    def getCarteAt(self, pos): 
-        #A compléter 
- 
- 
+# Si vous voulez exécuter l'exercice 2 : Enlever le # de la ligne ci-dessous
+# run = "python3 exercices/exercice2.py"
 
->>> unPaquet = PaquetDeCarte() 
->>> unPaquet.remplir() 
->>> uneCarte = unPaquet.getCarteAt(20) 
->>> print(uneCarte.getNom() + " de " + uneCarte.getCouleur()) 
+language = "python3"
+</code></pre>
 
-Exemple :  
-
-6 de coeur  
